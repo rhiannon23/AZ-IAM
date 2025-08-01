@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IAM Risk Dashboard</title>
+</head>
+<body>
+    <h1>IAM Risk Dashboard</h1>
+    <table border="1">
+        <tr>
+            <th>User</th>
+            <th>Risks</th>
+        </tr>
+        {% for user in risks %}
+        <tr>
+            <td>{{ user.name }}</td>
+            <td>{{ user.risks }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
